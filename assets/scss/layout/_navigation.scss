@@ -1,0 +1,11 @@
+.nav-main {
+
+& a {
+    text-decoration: none;
+    color:unset;
+}
+& a:hover {
+    color:unset;
+    opacity:0.7;
+}
+}

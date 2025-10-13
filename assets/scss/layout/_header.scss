@@ -1,0 +1,86 @@
+@use '../sass-utils/variables';
+
+.header {
+    color:var(--text-color-white);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    padding:50px;
+
+    &__logo {
+        width:50%;
+        text-align:left;
+
+        & img {
+            width:100px;
+        }
+    }
+
+    &__nav-bar {
+        width:50%;
+        text-align:right;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        & i {
+            font-size:1.5em;
+            padding:10px;
+            cursor: pointer;
+        }
+        & ul {
+            padding:0;
+        }
+
+        & nav {
+            display:none;
+            padding:10px;
+            border-right:1px solid #FFF;
+            border-bottom:1px solid #FFF;
+            width:125px;
+        }
+       
+    }
+}
+.popup-menu {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:9;
+    background-color:var(--text-color-black);
+    & i {
+        color:var(--text-color-white);
+        font-size:2em;
+        position:fixed;
+        right:10px;
+        top:10px;
+    }
+    & img {
+        max-width:200px;
+    }
+    &__content {
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        gap:20px;
+    }
+    & div {
+        height:100%;
+    }
+    & nav a {
+        color:var(--text-color-white);
+        text-align: center;
+    }
+    & ul {
+    padding:0;
+    }
+
+}
